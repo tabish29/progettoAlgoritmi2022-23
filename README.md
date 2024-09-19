@@ -16,7 +16,12 @@ Progettare e realizzare un algoritmo per risolvere il problema seguente:
   - Il nome del file contenente le coppie (chiave, stringa)
 
 **Comando di Esecuzione:**
-java Esercizio1 <m> <file_input> 
+Per eseguire il programma, utilizzare il comando seguente, sostituendo `nome-del-file.txt` con il nome del file che possiede la struttura richiesta, e m con un numero intero:
+
+```bash
+java Esercizio1 <m> nome-del-file.txt
+
+```
 
 # Esercizio 2: Gestione Dati da Sensore Ambientale
 
@@ -34,7 +39,10 @@ Per cambiare il numero di coppie generate cambiare il valore della variabile k p
 
 Per far partire il programma, utilizza il comando:
 
-java Esercizio2 
+```bash
+java Esercizio2
+
+```
 
 
 # Esercizio 3: Ottimizzazione Reti Fibra Ottica
@@ -43,9 +51,17 @@ java Esercizio2
 
 Questo progetto affronta il problema di ottimizzazione della rete di connettività in fibra ottica per una città con M fornitori di Internet. Ogni abitazione della città è abbonata a uno dei fornitori e deve essere collegata alle altre abitazioni dello stesso fornitore minimizzando la lunghezza totale delle connessioni.
 
-### Struttura del File di Input
+### Input
 
-Per visualizzare un esempio della struttura del file di input richiesto, si può consultare il file `Esercizio3.txt` incluso nella repository. Questo file mostra come devono essere organizzati i dati della scacchiera e le coordinate della sorgente e della destinazione.
+Il programma accetta un file di input con i seguenti parametri:
+- `M`: Numero di fornitori (intero > 0).
+- `N`: Numero di abitazioni (intero > 0).
+- `id_fornitore_Internet`: Array di dimensione N che indica il fornitore di connettività per ciascuna abitazione (intero tra 0 e M-1).
+- `x[j]`, `y[j]`: Coordinate (reali) delle abitazioni sul piano.
+
+### Esempio di file di Input
+
+Per visualizzare un esempio della struttura del file di input richiesto, si può consultare il file `Esercizio3.txt` incluso nella repository. Questo file mostra come devono essere organizzati i dati.
 
 ### Requisiti
 
@@ -60,11 +76,19 @@ Per visualizzare un esempio della struttura del file di input richiesto, si può
 
 Il programma stamperà a video la lunghezza complessiva dei tratti in fibra ottica per conto di ciascun fornitore. Se un fornitore non ha abbonati, il risultato sarà zero.
 
+
+### Struttura del File di Input
+
+Per visualizzare un esempio della struttura del file di input richiesto, si può consultare il file `Esercizio3.txt` incluso nella repository. Questo file mostra come devono essere organizzati i dati richiesti dal programma.
+
 ## Istruzioni per l'Esecuzione
 
-Per eseguire il programma, utilizzare il comando seguente:
+Per eseguire il programma, utilizzare il comando seguente, sostituendo `nome-del-file.txt` con il nome del file contenente le informazioni  :
 
-java  Esercizio3 Esercizio3.txt
+```bash
+java Esercizio3 nome-del-file.txt
+
+```
 
 # Esercizio 4
 
@@ -100,7 +124,10 @@ Per visualizzare un esempio della struttura del file di input richiesto, si può
 
 Per eseguire il programma, utilizzare il comando seguente, sostituendo `nome-del-file.txt` con il nome del file di input:
 
+```bash
 java Esercizio4 nome-del-file.txt
+
+```
 
 # Esercizio 5
 
@@ -131,7 +158,7 @@ L'algoritmo implementato utilizza la **programmazione dinamica** per risolvere i
 
 ### Struttura del File di Input
 
-Per visualizzare un esempio della struttura del file di input richiesto, si può consultare il file `Esercizio5.txt` incluso nella repository. Questo file mostra come devono essere organizzati i dati della scacchiera e le coordinate della sorgente e della destinazione.
+Per visualizzare un esempio della struttura del file di input richiesto, si può consultare il file `Esercizio5.txt` incluso nella repository. Questo file mostra come devono essere organizzate le misure dei contenitori.
 
 ### Output
 
@@ -143,5 +170,4 @@ Per eseguire il programma, utilizzare il comando seguente, sostituendo `nome-del
 
 ```bash
 java Esercizio5 nome-del-file.txt
-
-
+```
