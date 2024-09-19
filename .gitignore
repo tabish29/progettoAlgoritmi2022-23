@@ -1,0 +1,16 @@
+# Compiled class files
+*.class
+
+# IDE-specific files
+.idea/
+*.iml
+
+# Build output directory
+/out/
+
+# OS-files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
